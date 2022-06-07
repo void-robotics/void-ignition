@@ -1,7 +1,4 @@
-# void-ignition
-Docker container for ROS2 controller of Gazebo Ignition
-
-Readme Lidar
+# Task Using the Lidar Node
 
 # Download the repo
 
