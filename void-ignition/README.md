@@ -1,4 +1,4 @@
-# Task Using the Lidar Node
+# Task: Using the Lidar Node
 
 # Download the repo
 
@@ -19,7 +19,7 @@ cd /build
 make lidar_node
 
 
-#  Task- Using ROS_IGN_bridge to move robot in Gazebo
+#  Task: Using ROS_IGN_bridge to move robot in Gazebo
 
 # Create a ROS2 to IGN bridge
 ## Open terminal: A
