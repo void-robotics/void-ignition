@@ -10,7 +10,7 @@ Readme Lidar
 ign gazebo sensor_demo.sdf
 
 # Run the lidar node
-./build/lidar_node
+. /build/lidar_node
 
 # In order to launch the node as well as simulation use this single launch file
 
