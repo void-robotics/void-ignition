@@ -10,15 +10,19 @@ Once the setup is complete
 Clone the repo
 
 ## Using Lidar Sensor
+
 Inside void-ignition folder. Build a build directory
+''
 mkdir build
 cd build
+''
 
 Run cmake and build the code:
 
+''
 cmake ..
 make lidar_node
-
+''
 
 # Run the simulation
 ign gazebo sensor_demo.sdf
