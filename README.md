@@ -15,13 +15,13 @@ Inside void-ignition folder. Build a build directory
 
 
 mkdir build
---
+-
 cd build
 
 Run cmake and build the code:
 
 cmake ..
---
+-
 make lidar_node
 
 ## Run the simulation
@@ -37,7 +37,7 @@ ign launch sensor_launch.ign
 Note: After making any changes to lidar_node configuration, you will need to rebuild the node
 
 cd /build
---
+
 make lidar_node
 
 #### References
