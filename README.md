@@ -15,35 +15,35 @@ Inside void-ignition folder. Build a build directory
 
 
 mkdir build
-
+--
 cd build
 
 Run cmake and build the code:
 
 cmake ..
-
+--
 make lidar_node
 
-# Run the simulation
+## Run the simulation
 ign gazebo sensor_demo.sdf
 
-# Run the lidar node
+## Run the lidar node
 . /build/lidar_node
 
-# In order to launch the node as well as simulation use this single launch file
+#### In order to launch the node as well as simulation use this single launch file
 
 ign launch sensor_launch.ign
 
 Note: After making any changes to lidar_node configuration, you will need to rebuild the node
 
 cd /build
-
+--
 make lidar_node
 
 #### References
 https://gazebosim.org/docs/citadel/sensors
 
-##  Task: Using ROS_IGN_bridge to move robot in Gazebo
+#  Task: Using ROS_IGN_bridge to move robot in Gazebo
 
 ### Create a ROS2 to IGN bridge
 Follow these instructions to setup ROS ignition bridge.
@@ -67,7 +67,7 @@ You would now see the robot moving in the gazebo world.
 
 Note: Make sure the gazebo ignition is not paused
 
-References:
+#### References:
 
 https://github.com/gazebosim/ros_gz/blob/ros2/ros_ign_bridge/README.md#example-1a-ignition-transport-talker-and-ros-2-listener
 https://gazebosim.org/docs/citadel/ros2_integration
