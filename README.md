@@ -13,7 +13,7 @@ Clone the repo
 
 Follow these commands to build a ROS2 package to run lidar Node
 
-'''
+```
 source /opt/ros/<distro>/setup.bash
 
 mkdir void-ignition/src
@@ -31,23 +31,23 @@ cd ~/void-ignition
 
 colcon build
 
-'''
+```
 
 Run the package 
 
-'''
+```
  . /install/setup.bash
 
  ros2 run <package name> lidar_node
 
-'''
+```
 
 
 Download the sensors_demo.sdf file in your system and run it
 
-'''
+```
 ign gazebo sensors_demo.sdf
-'''
+```
 
 #### Make sure the simulation is not paused. 
 #### You will see the robot first moving forward and once it is 1 meter away from the wall it will try to avoid it by changing direction.
@@ -67,23 +67,23 @@ https://github.com/gazebosim/ros_gz/tree/foxy#binaries
 
 ## Create a ROS2 to IGN bridge
 #### Open terminal: A
-'''
+```
 ros2 run ros_ign_bridge parameter_bridge /cmd_vel@geometry_msgs/msg/Twist@ignition.msgs.Twist
-'''
+```
 
 ## Run the simulation
 #### Open new terminal: B
 
-'''
+```
 ign gazebo sensors_demo.sdf
-'''
+```
 
 ## Publishing message to ign through ROS2 using the ign bridge
 #### Open new terminal: C
 
-'''
+```
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: -1.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.8}}"
-'''
+```
 
 You would now see the robot moving in the gazebo world.
 
