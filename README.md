@@ -22,8 +22,13 @@ cd src
 
 ros2 pkg create --build-type ament_cmake --node-name lidar_node <package name>
 
+<<<<<<< HEAD
 * Copy the code from the Cmake list provided into the Cmake list of the package you just Created *
 * Copy the code of the lidar_node.cpp into my_node.cpp file inside your package src folder* 
+=======
+**Copy the code from the Cmake list provided into the Cmake list of the package you just Created**
+**Copy the code of the lidar_node.cpp into my_node.cpp file inside your package src folder** 
+>>>>>>> b9dd729714ab88184afcff41d5fe3fff55615337
 
 <!-- Build the package -->
 
