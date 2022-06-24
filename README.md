@@ -16,9 +16,7 @@ Follow these commands to build a ROS2 package to run lidar Node
 ```
 source /opt/ros/<distro>/setup.bash
 
-<!-- Build the package -->
-
-cd ~/void-ignition 
+<!-- Build the package | navigate to main repo -->
 
 colcon build
 
@@ -29,14 +27,15 @@ Run the package
 ```
  . /install/setup.bash
 
- ros2 run <package name> lidar_node
+ ros2 run lidar_node lidar_node
 
 ```
 
-
-Download the sensors_demo.sdf file in your system and run it
+Navigate to the lidar_node/src
 
 ```
+cd /src/lidar_node/src
+	
 ign gazebo sensors_demo.sdf
 ```
 
