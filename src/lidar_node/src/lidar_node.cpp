@@ -5,8 +5,6 @@
 #include <ignition/transport/Node.hh>
 
 #include <string>
-// #include "rclcpp/rclcpp.hpp"
-// #include "std_msgs/msg/string.hpp"
 
 ignition::transport::Node node; //Initialising node
   std::string topic_pub = "/cmd_vel";   //publish to this topic
@@ -53,8 +51,6 @@ void cb(const ignition::msgs::LaserScan &_msg)
 //Main function
 int main(int argc, char **argv)
 {
-  // rclcpp::init(argc, argv)
-  // auto node = 
 
   std::string topic_sub = "/lidar";   // subscribe to lidar topic
   
