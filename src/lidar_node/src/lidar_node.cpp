@@ -28,10 +28,8 @@ void cb(const ignition::msgs::LaserScan &_msg)
       break;
     }
   }
-  //For object farther than threshold distance 1 meter
-  //Keep going straight  
+  //For object farther than threshold distance 1 meter, Keep going straight  
 
-  printf("Lidar Node is running\n");
 
   if (allMore)   {
     data.mutable_linear()->set_x(0.5); //move forward
@@ -49,7 +47,7 @@ void cb(const ignition::msgs::LaserScan &_msg)
 
 
 //Main function
-int main(int argc, char **argv)
+int main()
 {
 
   std::string topic_sub = "/lidar";   // subscribe to lidar topic
@@ -66,3 +64,4 @@ int main(int argc, char **argv)
 
   return 0;
 }
+
